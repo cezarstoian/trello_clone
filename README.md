@@ -6,10 +6,9 @@ The application was deployed using Vercel:
 // TODO: add Vercel Link
 
 ## Tech Stack
-This project was made using the following stack: React, NextJS and MongoDB
+This project was made using the following stack: React, NextJS and MySQL
 // TODO: Talk a little about the tech stack and why I used it
 
-For the DB, I used MongoDB pentru ca asa am vrut, chiar daca se putea implementa, probabil mai bine, folosing o baza de date de tip SQL
 
 ## Folder Structure
 
@@ -18,3 +17,8 @@ For the DB, I used MongoDB pentru ca asa am vrut, chiar daca se putea implementa
 ## Components
 
 ## How to use the application
+
+npx prisma init
+npx prisma generate
+npx prisma db push
+npx prisma studio
