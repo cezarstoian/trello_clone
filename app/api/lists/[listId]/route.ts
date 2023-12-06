@@ -2,26 +2,26 @@ import { db } from "@/lib/db";
 import { NextResponse } from "next/server";
 
 interface IParams {
-  boardId?: string;
+  listId?: string;
 }
 
-// API to DELETE a board by its id
+// API to DELETE a list by its id
 export async function DELETE(
   request: Request,
   { params }: { params: IParams }
 ) {
   try {
-    const { boardId } = params
+    const { listId } = params
 
-    const deletedBoard = await db.board.delete({
+    const deletedList = await db.list.delete({
       where: {
-        id: boardId,
+        id: listId,
       },
     });
 
-    return NextResponse.json(deletedBoard)
+    return NextResponse.json(deletedList)
   } catch (err: any) {
-    console.log("Board delete error", err)
+    console.log("List delete error", err)
     return new NextResponse("Internal server error", { status: 500 });
   }
 }

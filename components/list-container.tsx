@@ -14,7 +14,7 @@ export const ListContainer = ({
 }: ListContainerProps) => {
 
   return (
-    <div className="flex">
+    <div className="flex flex-wrap overflow-auto">
       {data.map((list: ListWithCards) => (
         <ListObject key={list.id} data={list} />
       ))}
