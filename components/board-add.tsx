@@ -36,7 +36,7 @@ export const BoardAdd: React.FC = () => {
   return (
     <>
       <button
-        className="bg-gray-300 text-gray-700 py-2 px-4 rounded flex items-center hover:bg-gray-400"
+        className="bg-gray-300 text-gray-700 py-2 px-4 rounded flex items-center justify-center hover:bg-gray-400"
         onClick={handleAddBoardClick}
       >
         <Plus className="h-4 w-4 mr-2" />
