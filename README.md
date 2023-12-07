@@ -2,6 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## GitHub code and Application Deployment
 This project can be found on my GitHub: https://github.com/cezarstoian/trello_clone
+The progress can be tracked via the commits made.
 The application was deployed using Vercel: 
 // TODO: add Vercel Link
 
