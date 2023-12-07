@@ -6,11 +6,13 @@ import { ListObject } from "./list-object";
 import { ListAdd } from "./list-add";
 
 interface ListContainerProps {
-  data: ListWithCards[];
-};
+  data: ListWithCards[],
+  boardId: string,
+}
 
 export const ListContainer = ({
   data,
+  boardId,
 }: ListContainerProps) => {
 
   return (
@@ -18,7 +20,7 @@ export const ListContainer = ({
       {data.map((list: ListWithCards) => (
         <ListObject key={list.id} data={list} />
       ))}
-      <ListAdd />
+      <ListAdd boardId={boardId} />
     </div>
   )
 }

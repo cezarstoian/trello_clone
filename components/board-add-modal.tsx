@@ -12,9 +12,17 @@ export const BoardAddModal: React.FC<BoardAddModalProps> = ({
   onRequestClose,
   onAddBoard,
 }) => {
-  const [title, setTitle] = useState("");
+  const [title, setTitle] = useState("")
+  const [error, setError] = useState("")
 
   const handleCreateClick = () => {
+    if (title.trim() === "") {
+      setError("List title cannot be empty");
+      return;
+    }
+
+    setError("")
+
     onAddBoard(title);
     setTitle("");
     onRequestClose();
@@ -39,6 +47,7 @@ export const BoardAddModal: React.FC<BoardAddModalProps> = ({
         placeholder="Board Title"
         className="w-full mb-4 p-2 border border-gray-300 rounded"
       />
+      {error && <div className="text-red-500 mb-4">{error}</div>}
       <div className="flex justify-center">
         <button
           onClick={handleCreateClick}

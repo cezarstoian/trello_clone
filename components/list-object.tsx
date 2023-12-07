@@ -5,7 +5,7 @@ import { CardContainer } from "./card-container";
 
 
 interface ListObjectProps {
-  data: ListWithCards;
+  data: ListWithCards,
 };
 
 export const ListObject = ({
@@ -17,7 +17,7 @@ export const ListObject = ({
       <div>
         {data.title}
       </div>
-      <CardContainer data={data.cards} />
+      <CardContainer data={data.cards} listId={data.id} />
     </div>
   );
 };

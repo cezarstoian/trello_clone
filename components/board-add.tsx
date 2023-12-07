@@ -10,7 +10,7 @@ import toast from 'react-hot-toast';
 export const BoardAdd: React.FC = () => {
   const router = useRouter()
 
-  const [isModalOpen, setModalOpen] = useState(false);
+  const [isModalOpen, setModalOpen] = useState(false)
 
   const handleAddBoardClick = () => {
     setModalOpen(true)
@@ -31,7 +31,7 @@ export const BoardAdd: React.FC = () => {
     })
     .finally(() => setModalOpen(false))
     console.log("Create board with title:", title);
-  };
+  }
 
   return (
     <>

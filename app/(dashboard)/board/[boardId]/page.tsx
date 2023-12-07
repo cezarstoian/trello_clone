@@ -28,7 +28,7 @@ const BoardIdPage = async ({
       },
     },
     orderBy: {
-      title: "asc",
+      createdAt: "desc",
     },
   });
 
@@ -37,7 +37,7 @@ const BoardIdPage = async ({
       <div className="p-4 h-full overflow-x-auto">
         Board Name: {board?.title} (ID: {params.boardId})
       </div>
-      <ListContainer data={lists} />
+      <ListContainer data={lists} boardId={params.boardId} />
     </div>
   );
 };
