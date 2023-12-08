@@ -56,3 +56,4 @@ There are some improvements that can be made there, regarding the components. Fo
 When a programmer writes code, he often refactors his code, because there are better ways to implement the solution.
 
 If something does not work, then please inform me at cezarstoian1@gmail.com, as I missed it :)
+/
